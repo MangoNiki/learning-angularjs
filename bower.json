@@ -1,0 +1,22 @@
+{
+  "name": "AngularJS",
+  "homepage": "https://github.com/MangoNiki/learning-angularjs",
+  "authors": [
+    "niki"
+  ],
+  "description": "this is my angularjs demos",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "angular",
+    "javascript"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
