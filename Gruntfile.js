@@ -66,6 +66,14 @@ module.exports = function (grunt) {
                     dest: 'dest'
                 }]
             }
+        },
+        copy:{
+            files: {
+                expand: true,
+                cwd: 'src/lib',
+                src: '**',
+                dest: 'dest/lib'
+            },
         }
     });
 
@@ -75,6 +83,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
+    grunt.loadNpmTasks('grunt-contrib-copy');
 
-    grunt.registerTask("default", ['clean', 'uglify', 'jshint','cssmin','imagemin','htmlmin']);
+    grunt.registerTask("default", ['clean', 'uglify', 'jshint','cssmin','imagemin','htmlmin','copy']);
 };
