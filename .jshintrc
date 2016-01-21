@@ -1,3 +1,20 @@
 {
-  "eqeqeq":true
+  "eqeqeq": true,
+  "curly": true,
+  "bitwise": true,
+  "freeze": true,
+  "latedef": "nofunc",
+  "noarg": true,
+  "undef": true,
+  "unused": true,
+  "asi": true,
+  "boss": true,
+  "lastsemic": true,
+  "notypeof": true,
+  "browser": true,
+  "devel": true,
+  "globals": {
+    "$": false,
+    "jQuery": false
+  }
 }
