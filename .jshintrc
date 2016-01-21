@@ -1,4 +1,5 @@
 {
+  "node":true,
   "eqeqeq": true,
   "curly": true,
   "bitwise": true,
@@ -7,8 +8,6 @@
   "noarg": true,
   "undef": true,
   "unused": true,
-  "asi": true,
-  "boss": true,
   "lastsemic": true,
   "notypeof": true,
   "browser": true,
