@@ -28,7 +28,7 @@ module.exports = function (grunt) {
                 jshintrc: '.jshintrc',
                 reporter: require('jshint-stylish')
             },
-            all: ['Gruntfile.js', 'src/scripts/*.js', 'src/scripts/**/*.js']
+            all: ['Gruntfile.js','src/scripts/**/*.js']
         },
         cssmin: {
             options: {
@@ -38,8 +38,18 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: 'src/styles',
-                    src: ['*.css', '**/*.css'],
+                    src: ['**/*.css'],
                     dest: 'dest/styles',
+                }]
+            }
+        },
+        imagemin:{
+            target: {
+                files: [{
+                    expand: true,
+                    cwd: 'src/images',
+                    src: ['**/*.{png,jpg,jpeg,gif,webp,svg}'],
+                    dest: 'dest/images'
                 }]
             }
         }
@@ -49,6 +59,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-contrib-jshint");
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
 
-    grunt.registerTask("default", ['clean', 'uglify', 'jshint','cssmin']);
+    grunt.registerTask("default", ['clean', 'uglify', 'jshint','cssmin','imagemin']);
 };
