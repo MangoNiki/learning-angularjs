@@ -6,7 +6,7 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON("package.json"),
         clean: {
             build: {
-                src: ["dest/scripts"]
+                src: ["dest"]
             }
         },
         uglify: {
@@ -52,6 +52,20 @@ module.exports = function (grunt) {
                     dest: 'dest/images'
                 }]
             }
+        },
+        htmlmin:{
+            target: {
+                options: {
+                    removeComments: true,
+                    collapseWhitespace: true
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'src',
+                    src: ['**/*.html'],
+                    dest: 'dest'
+                }]
+            }
         }
     });
 
@@ -60,6 +74,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-contrib-htmlmin');
 
-    grunt.registerTask("default", ['clean', 'uglify', 'jshint','cssmin','imagemin']);
+    grunt.registerTask("default", ['clean', 'uglify', 'jshint','cssmin','imagemin','htmlmin']);
 };

@@ -1,3 +1,3 @@
 $(function(){
-    console.info("Hello");
+    alert("Hello");
 });

@@ -5,4 +5,4 @@
  * 
  * Powered By Niki 
  */
-$(function(){console.info("Hello")});
+$(function(){alert("Hello")});
