@@ -1,13 +1,23 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="mango">
 <head>
     <meta charset="UTF-8">
     <title>AngularJS</title>
 </head>
 <body>
 
+<div ng-controller="loginController">
+    <input type="text" name="username" ng-model="username" placeholder="请输入账号..."/>
+    <p ng-bind="username"></p>
+</div>
+
+
 <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="lib/angular/angular.min.js"></script>
+<script type="text/javascript" src="scripts/mango.js"></script>
+<script type="text/javascript" src="scripts/service.js"></script>
+<script type="text/javascript" src="scripts/directives.js"></script>
+<script type="text/javascript" src="scripts/controller.js"></script>
 <script type="text/javascript" src="scripts/common.js"></script>
 </body>
 </html>
