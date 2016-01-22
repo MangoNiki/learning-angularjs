@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e585511-de66-411a-98e3-07e743da5f31" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\MyEnv\WebStorm\AngularJS\dest\scripts\common.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyEnv\WebStorm\AngularJS\src\scripts\common.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.jshintrc" afterPath="$PROJECT_DIR$/.jshintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scripts/controller.js" afterPath="$PROJECT_DIR$/src/scripts/controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dest/index.html" afterPath="$PROJECT_DIR$/dest/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scripts/mango.js" afterPath="$PROJECT_DIR$/src/scripts/mango.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AngularJS.iws" />
@@ -365,7 +358,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453444799319</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="init angularjs demos">
+      <created>1453446325014</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1453446325014</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
