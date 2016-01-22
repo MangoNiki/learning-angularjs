@@ -1,3 +1,5 @@
-/**
- * Created by Niki on 2016/1/22.
- */
+function loginController($scope){
+    $scope.password = "1234567896";
+}
+angular.module('mango').
+    controller('loginController',['$scope',loginController]);

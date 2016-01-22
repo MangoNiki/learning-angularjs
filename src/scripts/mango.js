@@ -1,1 +1,1 @@
-var mango = angular.module("mango",[]);
+angular.module("mango",[]);
